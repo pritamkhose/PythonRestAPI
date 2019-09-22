@@ -1,0 +1,26 @@
+https://github.com/roytuts/python/blob/master/flask-rest-mongodb/
+
+https://www.moesif.com/blog/technical/restful/Guide-to-Creating-RESTful-APIs-using-Python-Flask-and-MongoDB/#
+
+https://www.roytuts.com/python-flask-rest-api-mongodb-crud-example/
+
+https://stackoverflow.com/questions/6832496/command-prompt-how-to-add-a-set-path-only-for-that-batch-file-executing
+
+SET PATH=%PATH%;C:\Users\Pritam\AppData\Local\Programs\Python\Python37-32;
+python main.py
+
+http://127.0.0.1:5000/
+
+
+https://api.mongodb.com/python/current/installation.html
+
+https://api.mongodb.com/python/current/tutorial.html
+
+http://blog.luisrei.com/articles/flaskrest.html
+
+https://blog.miguelgrinberg.com/post/customizing-the-flask-response-class
+
+
+https://flask.palletsprojects.com/en/1.1.x/tutorial/deploy/
+
+https://www.phusionpassenger.com/library/walkthroughs/deploy/python/ownserver/apache/enterprise/trusty/deploy_app.html

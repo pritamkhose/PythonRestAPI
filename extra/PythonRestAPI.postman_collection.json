@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "7e9f7ff8-dc29-4664-b505-d9596e4b0c49",
+		"name": "PythonRestAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"priam\",\n\t\"email\" : \"priamkhose@gmail.com\",\n\t\"pwd\" : \"priam\"\n}"
+				},
+				"url": "http://127.0.0.1:5000/add"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/user/5d879b24e81d97a333936f75",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/user/5d879b24e81d97a333936f75"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/delete/5d879b24e81d97a333936f75",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:5000/delete/5d879b24e81d97a333936f75"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"_id\" : \"5d879be5e81d97a333936f76\",\n\t\"name\" : \"priam\",\n\t\"email\" : \"priamkhose@gmail.com\",\n\t\"pwd\" : \"pwd\"\n}"
+				},
+				"url": "http://127.0.0.1:5000/update"
+			},
+			"response": []
+		}
+	]
+}
