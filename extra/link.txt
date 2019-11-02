@@ -24,3 +24,12 @@ https://blog.miguelgrinberg.com/post/customizing-the-flask-response-class
 https://flask.palletsprojects.com/en/1.1.x/tutorial/deploy/
 
 https://www.phusionpassenger.com/library/walkthroughs/deploy/python/ownserver/apache/enterprise/trusty/deploy_app.html
+
+
+-------------------------------------------------------------------------------------------
+
+https://towardsdatascience.com/a-flask-api-for-serving-scikit-learn-models-c8bcdaa41daa
+
+https://github.com/amirziai/sklearnflask/4
+
+-------------------------------------------------------------------------------------------

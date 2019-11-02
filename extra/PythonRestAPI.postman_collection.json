@@ -6,25 +6,108 @@
 	},
 	"item": [
 		{
-			"name": "http://127.0.0.1:5000/",
+			"name": "SaveModel",
+			"item": [
+				{
+					"name": "http://localhost:8080/wipe",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/wipe"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/train",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/train"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/predict",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\"Age\": 85, \"Sex\": \"male\", \"Embarked\": \"S\"},\r\n    {\"Age\": 24, \"Sex\": \"female\", \"Embarked\": \"C\"},\r\n    {\"Age\": 3, \"Sex\": \"male\", \"Embarked\": \"C\"},\r\n    {\"Age\": 21, \"Sex\": \"male\", \"Embarked\": \"S\"}\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/predict"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/cm",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"x\": [\n        1,\n        1,\n        0,\n        1,\n        0,\n        0,\n        1,\n        0,\n        0,\n        0\n    ],\n    \"y\": [\n        1,\n        0,\n        0,\n        1,\n        0,\n        0,\n        1,\n        1,\n        1,\n        0\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8080/cm"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/trainknn",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/trainknn"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "http://127.0.0.1:8080/",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://127.0.0.1:5000/"
+				"url": "http://127.0.0.1:8080/"
 			},
 			"response": []
 		},
 		{
-			"name": "http://127.0.0.1:5000/users",
+			"name": "http://127.0.0.1:8080/users",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://127.0.0.1:5000/users"
+				"url": "http://127.0.0.1:8080/users"
 			},
 			"response": []
 		},
 		{
-			"name": "http://127.0.0.1:5000/add",
+			"name": "http://127.0.0.1:8080/add",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -37,32 +120,32 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\" : \"priam\",\n\t\"email\" : \"priamkhose@gmail.com\",\n\t\"pwd\" : \"priam\"\n}"
+					"raw": "{\n    \"name\": \"name\",\n    \"email\": \"name@gmail.com\",\n    \"pwd\": \"pwd\"\n}"
 				},
-				"url": "http://127.0.0.1:5000/add"
+				"url": "http://127.0.0.1:8080/add"
 			},
 			"response": []
 		},
 		{
-			"name": "http://127.0.0.1:5000/user/5d879b24e81d97a333936f75",
+			"name": "http://127.0.0.1:8080/user/5d879b24e81d97a333936f75",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://127.0.0.1:5000/user/5d879b24e81d97a333936f75"
+				"url": "http://127.0.0.1:8080/user/5da2ac47ee58292025929cf3"
 			},
 			"response": []
 		},
 		{
-			"name": "http://127.0.0.1:5000/delete/5d879b24e81d97a333936f75",
+			"name": "http://127.0.0.1:8080/delete/5d879b24e81d97a333936f75",
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "http://127.0.0.1:5000/delete/5d879b24e81d97a333936f75"
+				"url": "http://127.0.0.1:8080/delete/5da2bd30b9c9e658470a53a4"
 			},
 			"response": []
 		},
 		{
-			"name": "http://127.0.0.1:5000/update",
+			"name": "http://127.0.0.1:8080/update",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -77,7 +160,7 @@
 					"mode": "raw",
 					"raw": "{\n\t\"_id\" : \"5d879be5e81d97a333936f76\",\n\t\"name\" : \"priam\",\n\t\"email\" : \"priamkhose@gmail.com\",\n\t\"pwd\" : \"pwd\"\n}"
 				},
-				"url": "http://127.0.0.1:5000/update"
+				"url": "http://127.0.0.1:8080/update"
 			},
 			"response": []
 		}
